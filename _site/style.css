@@ -1,0 +1,202 @@
+/* this is the reset and the box sizes are to see where we are typing and how much space in between */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Noto Sans JP";
+}
+
+div {
+  /* border: 2px solid grey; */
+}
+
+
+/* this is where the reset ends */
+/* the next is going to be our general parent style */
+
+/* genral styles, all sections have 2% padding-margin */
+header, section, footer {
+  padding: 4% /* make it responsiveby using %instead of px */
+  /* no margins cause all the pictures stick to the border */
+}
+
+.logo {
+  background-color: white;
+  position: fixed; /* this tells it to stay in place as we scroll */
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
+.dark-bg {
+  background-color: black;
+}
+
+
+
+.bump-left {
+  text-align:left;
+  margin-left: -4rem;
+  position: relative;
+  z-index: 9;
+  background-color: rgba(255,255,255,0.8);
+  padding: 1rem;
+}
+
+.bump-right {
+  text-align: right;
+  margin-right: -4rem;
+  position: relative;
+  z-index: 9;
+  background-color: rgba(255,255,255,0.8);
+  padding: 1rem;
+}
+
+.center {
+  text-align: center;
+}
+.blog-button {
+  text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.5rem;
+    display: inline-block;
+    font-family: "Playfair Display";
+    border-bottom: 1px solid rgba(0,0,0,0);
+}
+nav a:hover {
+    border-bottom: 1px solid;
+}
+
+
+.blog-button a {
+    text-decoration: none;
+    font-style: italic;
+    padding: 1rem;
+    display: inline-block;
+    border-bottom: 1px solid;
+    font-family: "Playfair Display";
+}
+/* typography styles */
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Playfair Display";
+  font-weight: normal;
+}
+
+.about {
+  margin: 10% 29%;
+  border-left: 1px solid grey;
+  padding-left: 4rem;
+}
+
+span {
+  color: white;
+}
+
+.blog-title {
+  text-align: inherit;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* end of typography */
+
+/* small classes */
+.padding-none {
+  padding: 0;
+}
+/* end of small classes */
+
+/* beginning of sections */
+header {
+  background-image: url('https://66.media.tumblr.com/96f16959e57ee59dd84dfb44cfd4c2ed/tumblr_ougjqhHm0m1untqm5o1_500.gif');
+  background-position: center ;
+  background-size: cover;
+  min-height: 100vh;
+  text-align: left;
+}
+hr {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.blog-reviews div{
+  min-height: 40vh;
+}
+
+.blog-title {
+  font-family: sans-serif;
+  color: red;
+}
+.col-6 {
+  padding: 2rem;
+}
+.cafe {
+  background-image: url('images/cafe.jpg');
+  background-size: contain;
+  background-position: 50% 50%;
+
+}
+.interior {
+  background-image: url('images/interior.jpg');
+  background-size: contain;
+  background-position: 25% 25%;
+}
+.asiyami {
+  background-image: url('images/asiyami.jpg');
+  background-size: contain;
+  background-position: 25% 25%;
+}
+.bg-image {
+  background-position: center;
+  background-size: cover;
+  padding-bottom:40%;
+}
+
+input {
+  width: 25%;
+  margin-bottom: 0.5rem;
+  padding: 1% ;
+  margin: 0;
+}
+
+/* contact form */
+.button-flat, {
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.5rem 2rem;
+  border: 2px solid teal;
+  color: teal;
+  transition: all 0.5s; /* this makes the hover effects smooth */
+  line-height: 1.5rem;
+}
+
+
+.button-flat.fancy {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+  padding: 1rem 3rem;
+  color: black;
+  border-color: black;
+}
+
+/* Hover Effects */
+.button-flat:hover {
+  color: white;
+  border-color: black;
+  background-color: black;
+  font-color: white;
+}
