@@ -26,6 +26,13 @@ header, section, footer {
   /* no margins cause all the pictures stick to the border */
 }
 
+.footer-nav {
+margin: -5rem;
+padding: 8rem;
+background-color: black;
+text-align: center;
+}
+
 .logo {
   background-color: white;
   position: fixed; /* this tells it to stay in place as we scroll */
@@ -35,11 +42,6 @@ header, section, footer {
   right: 0;
 
 }
-.dark-bg {
-  background-color: black;
-}
-
-
 
 .bump-left {
   text-align:left;
@@ -94,6 +96,10 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: normal;
 }
 
+p {
+  font-family: "Playfair Display";
+  font-style: normal;
+}
 .about {
   margin: 10% 29%;
   border-left: 1px solid grey;
@@ -163,6 +169,14 @@ hr {
   padding-bottom:40%;
 }
 
+.editor {
+  text-align: center;
+}
+
+.picks {
+  border:
+  text-align: center;
+}
 input {
   width: 25%;
   margin-bottom: 0.5rem;
