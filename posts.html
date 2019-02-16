@@ -8,11 +8,14 @@ pictures:
  - images/food.jpg
 ---
 <!-- beginning of blog posts -->
-<section class="column grid padding-none blog-posts">
-  {% for picture in page.pictures %}
-    <div class="col-6 bg-image" style="background-image: url('{{picture}}')">
-    </div>
-  {% endfor %}
+<section class="column padding-none blog-posts">
+  <div class="grid-spaceAround">
+    {% for picture in page.pictures %}
+        <div class="col-3 bg-image post-bg-image" style="background-image: url('{{picture}}')">
+        </div>
+    {% endfor %}
+  </div>
+
 <!-- row 1 -->
 <!-- <div class="col-6 lafricana"> </div>
 <div class="col-6 cigar"> </div>

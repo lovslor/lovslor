@@ -167,8 +167,11 @@ hr {
   background-position: center;
   background-size: cover;
   padding-bottom:40%;
-}
 
+}
+.post-bg-image {
+  margin: 0 2% 2% 0;
+}
 .editor {
   text-align: center;
 }
@@ -183,6 +186,13 @@ input {
   padding: 1% ;
   margin: 0;
 }
+
+.where-i-shop {
+  display: grid;
+  padding-left: 9rem;
+  padding-right: 5rem;
+  word-spacing: 1rem;
+} /* anordnung damit es wie ne liste aussieht */
 
 /* contact form */
 .button-flat, {
@@ -207,11 +217,21 @@ input {
   color: black;
   border-color: black;
 }
-
+.smaller-bg-image {
+  padding: 5%;
+}
 /* Hover Effects */
 .button-flat:hover {
   color: white;
   border-color: black;
   background-color: black;
   font-color: white;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact-form {
+  text-align: center;
 }
