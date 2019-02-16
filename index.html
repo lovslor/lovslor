@@ -4,7 +4,7 @@ video-banner: true
 ---
   <!-- beginning of blog posts reviews -->
 <section class="column grid padding-none blog-reviews">
-  
+
 
   <!-- row 1 -->
     <div class="col-4_sm-12 cafe bg-image"></div>
@@ -12,7 +12,7 @@ video-banner: true
       <h2 class="bump-left"> Canggu Style Café </h2>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
       <p class="blog-button">
-        <a href="#"> full story </a>
+        <a href="{{site.posts[0].url}}"> full story </a>
       </p>
     </div>
     <div class="col-4_sm-12"><!-- empty div --> </div>
@@ -24,7 +24,7 @@ video-banner: true
       <h2 class="bump-right"> Brutal Architecture </h2>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
       <p class="blog-button">
-        <a href="#"> full story </a>
+        <a href="{{site.posts[0].url}}"> full story </a>
       </p>
     </div>
     <div class="col-4_sm-12 interior bg-image"></div>
@@ -35,7 +35,7 @@ video-banner: true
       <h2 class="bump-left"> 6 hours in Cuba </h2>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
       <p class="blog-button">
-        <a href="#"> full story </a>
+        <a href="{{site.posts[0].url}}"> full story </a>
       </p>
     </div>
     <div class="col-4_sm-12-bottom grid">
@@ -53,19 +53,16 @@ video-banner: true
   </section>
   <!-- end of blog posts reviews -->
   <!-- beginning of editors picks -->
-  <section class="grid">
+  <!-- <section class="grid-spaceAround">
     <h3 class="col-12 editor"> Editor's Picks </h3>
-    <div class="col-6 picture picks">
+    <div class="col-4 picture picks left-align">
       <p> Berlin </p>
       <a href="#"> Read More </a>
     </div>
-    <div class="col-6 picture picks">
+    <div class="col-4 picture picks">
       <p> Bali </p>
       <a href="#"> Read More </a>
     </div>
-  </section>
+  </section> -->
   <section>
-    {% for post in site.posts %}
-    <a href="{{post.url}}"> {{post.title}} </a>
-    {% endfor %}
   <!-- end of editors picks -->

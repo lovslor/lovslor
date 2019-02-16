@@ -2,25 +2,35 @@
 layout: default
 ---
 
-<section class="contact-form grid">
-  <h1 class="col-12 contact"> CONTACT ME </h1>
+<section class="contact-form">
+  <h1 class="contact"> CONTACT ME </h1>
   <h2> PLEASE COMPLETE THE FORM BELOW </h2>
-  <div class="col-6 padding-right ">
-    <form action="https://formspree.io/lovslor@hotmail.com" method="POST">
+  <!-- <div class="padding-right "> -->
+    <form class="grid form-md grid-spaceAround" action="https://formspree.io/lovslor@hotmail.com" method="POST">
+      <div class="form-group col-6">
+        <input id="first name" name="first name" class="form-control" type="text"  placeholder="" required>
+        <label for="first name">First Name</label>
+      </div>
 
-      <label for="username">Name</label>
-      <input type="text" name="username" id="username">
+      <div class="form-group col-6">
+        <input id="last name" class="form-control" type="text"  name="last name" placeholder="" required>
+        <label for="last name">Last Name</label>
+      </div>
 
-      <label for="username">E-Mail Adress</label>
-      <input type="email" name="Email" id="Email">
+      <div class="form-group col-12">
+        <input id="email" name="email" class="form-control" type="text"  placeholder="" required>
+        <label for="email">E-Mail Adress</label>
+      </div>
 
-      <label for="username">Subject</label>
-      <input type="subject" name="Subject" id="Subject">
-
-      <label for="username">Message</label>
-      <input type="message" name="Message" id="Message">
-
+      <div class="form-group col-12">
+        <input id="subject" class="form-control" type="text"  name="subject" placeholder="" required>
+        <label for="subject">Subject</label>
+      </div>
+      <div class="form-group col-12">
+        <input id="message" name="message" class="form-control" type="text"  placeholder="" required>
+        <label for="message">Message</label>
+      </div>
       <input type="submit" class="button-flat fancy" value="Submit">
     </form>
-  </div>
+  <!-- </div> -->
 </section>
