@@ -9,10 +9,14 @@ video-banner: true
   <!-- row 1 -->
     <div class="col-4_sm-12 cafe bg-image"></div>
     <div class="col-4_sm-12-middle">
+
       <h2 class="bump-left"> Canggu Style Café </h2>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
       <p class="blog-button">
-        <a href="{{site.posts[0].url}}"> full story </a>
+        <!-- get the posts that have a title that matches -->
+        {% assign canggu-post =  site.posts | where: 'title', 'Canggu Style Café' %}
+        <!-- 0 means take the first from the list -->
+        <a href="{{ canggu-post[0].url }}"> full story </a>
       </p>
     </div>
     <div class="col-4_sm-12"><!-- empty div --> </div>
@@ -24,7 +28,8 @@ video-banner: true
       <h2 class="bump-right"> Brutal Architecture </h2>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
       <p class="blog-button">
-        <a href="{{site.posts[0].url}}"> full story </a>
+        {%assign brutal-post = site.posts | where: 'title', 'Art Design' %}
+        <a href="{{ brutal-post[0].url }}"> full story </a>
       </p>
     </div>
     <div class="col-4_sm-12 interior bg-image"></div>
@@ -35,19 +40,20 @@ video-banner: true
       <h2 class="bump-left"> 6 hours in Cuba </h2>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
       <p class="blog-button">
-        <a href="{{site.posts[0].url}}"> full story </a>
+        {%assign havana-post = site.posts | where: 'title', 'Havana' %}
+        <a href="{{ havana-post[0].url }}"> full story </a>
       </p>
     </div>
     <div class="col-4_sm-12-bottom grid">
       <nav class="col-12-bottom where-i-shop">
         <h3> Where I shop </h3>
         <hr>
-        <a href="#">NET-A-PORTER</a>
-        <a href="#">JACQUEMUS</a>
-        <a href="#">THE ARRIVALS</a>
-        <a href="#">IVY REVEL</a>
-        <a href="#">ACNE STUDIOS</a>
-        <a href="#">& OTHER STORIES</a>
+        <a href="https://www.net-a-porter.com/id/en/">NET-A-PORTER</a>
+        <a href="https://www.jacquemus.com/?v=b718adec73e0">JACQUEMUS</a>
+        <a href="https://thearrivals.com/">THE ARRIVALS</a>
+        <a href="https://www.ivyrevel.com/row/home">IVY REVEL</a>
+        <a href="https://www.acnestudios.com/au/en/home">ACNE STUDIOS</a>
+        <a href="https://www.stories.com/en_gbp/index.html">& OTHER STORIES</a>
       </nav>
     </div>
   </section>

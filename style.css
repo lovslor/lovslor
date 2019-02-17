@@ -12,8 +12,8 @@ html, body {
   font-family: "Noto Sans JP";
 }
 
-div {
-  /* border: 2px solid grey; */
+img{
+max-width: 100%;
 }
 
 
@@ -117,10 +117,18 @@ span {
   color: white;
 }
 
+.posts h1 {
+  text-align: center;
+}
 .blog-title {
   text-align: inherit;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.blog-posts img {
+  margin: auto;
+  display: block;
 }
 /* end of typography */
 
@@ -231,7 +239,8 @@ hr {
 
 .contact-form {
   text-align: center;
-  height: 100vh;
+  height: 108vh;
+  font-size: small
 }
 
 .padding-right {
@@ -370,6 +379,7 @@ input:focus :-ms-input-placeholder { color: transparent; font-size: 0; }
   border-color: black;
   border: 1px solid black;
   width: 20%;
+  min-height: 3rem;
 }
 .smaller-bg-image {
   padding: 5%;

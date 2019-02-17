@@ -1,11 +1,37 @@
 ---
 layout: default
 ---
+<!-- beginning of blog posts -->
+<section class="column blog-posts posts">
 
-<section class="grid-center">
-  <div class="col-8_sm-12">
+  <h1> {{page.title}} </h1>
 
+  <img src={{page.banner_image}}>
+
+  <!-- <div class="grid-spaceAround">
+    {% for picture in page.pictures %}
+        <div class="col-3 bg-image post-bg-image" style="background-image: url('{{picture}}')">
+        </div>
+    {% endfor %}
+  </div> -->
+
+<!-- row 1 -->
+<!-- <div class="col-6 lafricana"> </div>
+<div class="col-6 cigar"> </div>
+<div class="col-6 pablo"> </div>
+<!-- row 2 -->
+<!-- <div class="col-6 car"> </div>
+<div class="col-6 food"> </div>
+<!-- row 3 -->
+<div class="posts-text-section grid-right">
+  <!-- <a href="#"> previous </a> -->
+  <div class="col-6">
     {{content}}
-    
   </div>
+
+  <!-- <a href="#"> next </a>   -->
+</div>
+
+<!-- comment section -->
 </section>
+<!-- end of blog posts -->
